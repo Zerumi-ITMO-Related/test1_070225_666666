@@ -9,33 +9,6 @@ import kotlin.math.sqrt
 // как будто отношения между людьми подчиняются тем же законам, что отношения между атомами
 // и молекулами.
 
-data class Spaceship(
-    val name: String,
-    val mass: UInt,
-    val engine: Engine,
-)
-
-data class Engine(
-    val mass: UInt, val power: UInt
-)
-
-data class Flight(
-    val spaceship: Spaceship,
-    var gas: Boolean,
-    var brake: Boolean,
-    var gasInitTime: Long,
-    var brakeInitTime: Long,
-    var speed: Double,
-)
-
-data class FlightControl(
-    val gasInit: (Long) -> Unit,
-    val gasStop: (Long) -> Unit,
-    val brakeInit: (Long) -> Unit,
-    val brakeStop: (Long) -> Unit,
-    val speed: (Long) -> Double,
-)
-
 data class State<T>(
     val state: T,
     val test: (Boolean) -> ConditionalState<T>
@@ -65,6 +38,33 @@ fun <T> initState(state: T): State<T> = State(
         )
         createConditionalState(state)
     }
+)
+
+data class Spaceship(
+    val name: String,
+    val mass: UInt,
+    val engine: Engine,
+)
+
+data class Engine(
+    val mass: UInt, val power: UInt
+)
+
+data class Flight(
+    val spaceship: Spaceship,
+    var gas: Boolean,
+    var brake: Boolean,
+    var gasInitTime: Long,
+    var brakeInitTime: Long,
+    var speed: Double,
+)
+
+data class FlightControl(
+    val gasInit: (Long) -> Unit,
+    val gasStop: (Long) -> Unit,
+    val brakeInit: (Long) -> Unit,
+    val brakeStop: (Long) -> Unit,
+    val speed: (Long) -> Double,
 )
 
 fun initFlight(

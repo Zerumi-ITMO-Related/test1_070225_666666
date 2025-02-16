@@ -1,5 +1,3 @@
-package io.github.zerumi
-
 import kotlin.math.PI
 import kotlin.math.pow
 

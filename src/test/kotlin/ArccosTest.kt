@@ -1,4 +1,3 @@
-import io.github.zerumi.arccos
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import kotlin.math.PI

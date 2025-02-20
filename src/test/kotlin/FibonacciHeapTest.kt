@@ -6,7 +6,7 @@ import kotlin.test.assertNotNull
 
 class FibonacciHeapTest {
     @Test
-    fun heapTest() {
+    fun `testHeap sequentially inserting 5 minimums`() {
         val heap = FibonacciHeap()
         for (i in 10..15) heap.insert(i)
         val min = heap.min()
@@ -15,7 +15,7 @@ class FibonacciHeapTest {
     }
 
     @Test
-    fun bigHeapTest() {
+    fun `testHeap sequentially inserting 1000000 minimums`() {
         val heap = FibonacciHeap()
         val nums = 1..1000000
         for (i in nums) heap.insert(i)
@@ -28,7 +28,7 @@ class FibonacciHeapTest {
     }
 
     @Test
-    fun reversedHeapInsert() {
+    fun `testHeap reversed inserting 1000 minimums`() {
         val heap = FibonacciHeap()
         val nums = 1000 downTo 1 step 2
         for (i in nums) heap.insert(i)
@@ -41,7 +41,7 @@ class FibonacciHeapTest {
     }
 
     @Test
-    fun shuffledInsertInHeapTest() {
+    fun `testHeap shuffled inserting`() {
         val heap = FibonacciHeap()
         val nums = 1..10000
         for (i in nums.shuffled()) heap.insert(i)
@@ -54,7 +54,7 @@ class FibonacciHeapTest {
     }
 
     @Test
-    fun similarInsertInHeapTest() {
+    fun `testHeap inserting similar elements`() {
         val heap = FibonacciHeap()
         val nums = arrayOf(3, 3, 3, 4, 4, 4)
         for (i in nums) heap.insert(i)
@@ -67,7 +67,7 @@ class FibonacciHeapTest {
     }
 
     @Test
-    fun testFibonacciAlgo() {
+    fun `testHeap fibonacci algorithm to build child and left-right elements`() {
         val heap = FibonacciHeap()
         val nums = arrayOf(3, 1, 2)
         for (i in nums) heap.insert(i)

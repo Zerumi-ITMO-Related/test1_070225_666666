@@ -99,7 +99,7 @@ fun initFlight(
             .test(flight.gas)
             .ifTrue { speed ->
                 val time = timestamp - flight.gasInitTime
-                val acceleration = sqrt(
+                val acceleration = if (time == 0L) 0.0 else sqrt(
                     spaceship.engine.power.toDouble() / (2.0 * (spaceship.mass + spaceship.engine.mass).toDouble() * time)
                 )
                 speed + acceleration * time

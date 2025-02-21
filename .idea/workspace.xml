@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db626fac-4c0e-4c55-9715-80dd4b75addc" name="Changes" comment="feat: add almost pure fp but golden heart implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Arccos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ArccosTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/GoldenHeart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/GoldenHeart.kt" afterDir="false" />
+    <list default="true" id="db626fac-4c0e-4c55-9715-80dd4b75addc" name="Changes" comment="fix: bug when speed calculation when timestamp 0">
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ArccosTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ArccosTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,16 +18,55 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test1_070225_367837" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test1_070225_367837" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Zerumi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Zerumi-ITMO-Related/test1_070225_666666.git",
+    "accountId": "05aea2e5-444e-48f9-89bb-e93fc45ab794"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -46,14 +83,33 @@
     "Gradle.ArccosTest.testArccos should return 1,5707 when x is zero.executor": "Run",
     "Gradle.ArccosTest.testArccos should return 3,141 when x is -1.executor": "Debug",
     "Gradle.Build test1_070225_367837.executor": "Run",
+    "Gradle.FibonacciHeapTest.bigHeapTest.executor": "Run",
+    "Gradle.FibonacciHeapTest.executor": "Run",
+    "Gradle.FibonacciHeapTest.heapTest.executor": "Run",
+    "Gradle.FibonacciHeapTest.shuffledElements.executor": "Run",
+    "Gradle.FibonacciHeapTest.similarElements.executor": "Run",
+    "Gradle.FibonacciHeapTest.testFibonacciAlgo.executor": "Debug",
+    "Gradle.FibonacciHeapTest.testHeap fibonacci algorithm to build child and left-right elements.executor": "Run",
+    "Gradle.GoldenHeartTest.executor": "Run",
+    "Gradle.GoldenHeartTest.testFlight brake should decrease speed.executor": "Run",
+    "Gradle.GoldenHeartTest.testFlight gas initialization.executor": "Debug",
+    "Gradle.GoldenHeartTest.testState similar states should be compared.executor": "Run",
+    "Gradle.GoldenHeartTest.testState then should allow to construct new state.executor": "Run",
+    "Gradle.GoldenHeartTest.testState.executor": "Run",
     "Kotlin.GoldenHeartKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ArccosTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.FibonacciHeapTest">
     <configuration name="ArccosTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -78,7 +134,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ArccosTest.testArccos should return 0 when x is one" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FibonacciHeapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -91,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ArccosTest.testArccos should return 0 when x is one&quot;" />
+            <option value="&quot;FibonacciHeapTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -102,7 +158,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ArccosTest.testArccos should return 1,5707 when x is zero" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FibonacciHeapTest.testHeap fibonacci algorithm to build child and left-right elements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ArccosTest.testArccos should return 1,5707 when x is zero&quot;" />
+            <option value="&quot;FibonacciHeapTest.testHeap fibonacci algorithm to build child and left-right elements&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -126,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ArccosTest.testArccos should return 3,141 when x is -1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GoldenHeartTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -139,7 +195,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ArccosTest.testArccos should return 3,141 when x is -1&quot;" />
+            <option value="&quot;GoldenHeartTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GoldenHeartTest.testFlight brake should decrease speed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GoldenHeartTest.testFlight brake should decrease speed&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,10 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FibonacciHeapTest" />
+        <item itemvalue="Gradle.FibonacciHeapTest.testHeap fibonacci algorithm to build child and left-right elements" />
         <item itemvalue="Gradle.ArccosTest" />
-        <item itemvalue="Gradle.ArccosTest.testArccos should return 3,141 when x is -1" />
-        <item itemvalue="Gradle.ArccosTest.testArccos should return 0 when x is one" />
-        <item itemvalue="Gradle.ArccosTest.testArccos should return 1,5707 when x is zero" />
+        <item itemvalue="Gradle.GoldenHeartTest" />
+        <item itemvalue="Gradle.GoldenHeartTest.testFlight brake should decrease speed" />
       </list>
     </recent_temporary>
   </component>
@@ -184,12 +265,84 @@
       <option name="project" value="LOCAL" />
       <updated>1739234427400</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add arccos testing">
+      <option name="closed" value="true" />
+      <created>1739575985949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739575985949</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add Fibonacci heap and test class">
+      <option name="closed" value="true" />
+      <created>1739575999404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739575999404</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: enhance golden heart and add test class">
+      <option name="closed" value="true" />
+      <created>1739576031792</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739576031792</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: idea workspace file">
+      <option name="closed" value="true" />
+      <created>1739576045315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739576045315</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: updated fibonacci heap test">
+      <option name="closed" value="true" />
+      <created>1739703277278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739703277278</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: refactor">
+      <option name="closed" value="true" />
+      <created>1739703291741</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739703291741</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add new tests">
+      <option name="closed" value="true" />
+      <created>1740094898338</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740094898338</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: bug when speed calculation when timestamp 0">
+      <option name="closed" value="true" />
+      <created>1740094922384</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740094922384</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: init gradle project" />
     <MESSAGE value="feat: add almost pure fp but golden heart implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add almost pure fp but golden heart implementation" />
+    <MESSAGE value="feat: add arccos testing" />
+    <MESSAGE value="feat: add Fibonacci heap and test class" />
+    <MESSAGE value="feat: enhance golden heart and add test class" />
+    <MESSAGE value="chore: idea workspace file" />
+    <MESSAGE value="feat: updated fibonacci heap test" />
+    <MESSAGE value="chore: refactor" />
+    <MESSAGE value="feat: add new tests" />
+    <MESSAGE value="fix: bug when speed calculation when timestamp 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: bug when speed calculation when timestamp 0" />
   </component>
 </project>

@@ -1,10 +1,27 @@
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.CsvFileSource
 import kotlin.math.PI
 import kotlin.math.sqrt
 import kotlin.test.assertEquals
 
 class ArccosTest {
+    @ParameterizedTest
+    @CsvFileSource(resources = ["/data.csv"], numLinesToSkip = 1)
+    fun `testArccos should pass tests from coverage table`(
+        testName: String,
+        input: Double,
+        expected: Double,
+        tolerance: Double
+    ) {
+        assertEquals(
+            expected,
+            arccos(input),
+            tolerance,
+            "$testName failed, actual: ${arccos(input)}"
+        )
+    }
 
     @Test
     fun `testArccos should return 3,141 when x is -1`() {
